@@ -15,5 +15,5 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_CXX_STANDARD 17)
 set(home_root /home/ultimatepandit/Project_SRC/practice_zone/core) 
 set(CMAKE_INSTALL_PREFIX ${home_root}/build/install)
-
+add_library(lib_core)
 add_subdirectory(src)
