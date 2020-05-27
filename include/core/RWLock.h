@@ -1,6 +1,7 @@
 #include <mutex>
 #include <condition_variable>
-
+namespace core
+{
 class RWLock
 {
 public:
@@ -24,3 +25,5 @@ private:
 	bool bWritting_;
 	int nRead_cnt_;
 };
+
+}

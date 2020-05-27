@@ -1,17 +1,6 @@
-target_sources(lib_core
-	#header only
-	INTERFACE
-	PRIVATE
-	../include/RWLock.h
-	RWLock.cpp
-	)
+add_library(core)
+add_subdirectory(core)
 
-target_include_directories(lib_core
-	PUBLIC
-	../include
-	)
-#target_compile_definitions(lib_core
-#	)
-set_target_properties(lib_core PROPERTIES
-	OUTPUT_NAME core
-	)
+add_library(framework_test)
+add_subdirectory(testMain)
+
