@@ -21,7 +21,7 @@ target_link_libraries(framework_test
 	PUBLIC
 	$<$<BOOL:${USE_GOOGLE_TEST}>:gtest>
 	$<$<NOT:$<BOOL:${USE_GOOGLE_TEST}>>:Boost::unit_test_framework>
-	$<$<NOT:$<BOOL:${USE_GOOGLE_TEST}>>::Boost:system>
+	$<$<NOT:$<BOOL:${USE_GOOGLE_TEST}>>:Boost::system>
 	)
 
 set_target_properties(framework_test PROPERTIES
