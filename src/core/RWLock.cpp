@@ -1,4 +1,5 @@
 #include "RWLock.h"
+namespace core{
 
 bool RWLock::read_lock()
 {
@@ -41,5 +42,7 @@ bool RWLock::write_unlock()
 	//notify all readers
 	cv_read_.notify_all();
 	lck.unlock();
+}
+
 }
 
