@@ -1,9 +1,10 @@
+#include <TestMain.cpp>
 #include <RWLock.h>
+
 #include <iostream>
 
-struct Test
+TEST(RWLock, owned_creation )
 {
-	static void test_multiple_Read_one_Write() {
-		std::cout << "test case one read one write" <<std::endl;
-	}
-};
+	bool bFlag = true;
+	EXPECT_TRUE( bFlag );
+}

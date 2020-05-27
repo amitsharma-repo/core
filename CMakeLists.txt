@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
 project(core
 	LANGUAGES C CXX)
+
 enable_testing()
 
 include(cmake/project_Setting.cmake)

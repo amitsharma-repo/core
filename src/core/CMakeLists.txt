@@ -10,6 +10,9 @@ target_include_directories(core
 	PUBLIC
 	../../include/core
 	)
+install(TARGETS core
+    DESTINATION ${CMAKE_INSTALL_PREFIX}
+    )   
 #target_compile_definitions(core
 #	)
 set_target_properties(core PROPERTIES

@@ -24,6 +24,10 @@ target_link_libraries(framework_test
 	$<$<NOT:$<BOOL:${USE_GOOGLE_TEST}>>:Boost::system>
 	)
 
+install(TARGETS framework_test
+    DESTINATION ${CMAKE_INSTALL_PREFIX}
+    )
+   
 set_target_properties(framework_test PROPERTIES
 	OUTPUT_NAME test
 	)
