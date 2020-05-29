@@ -17,8 +17,8 @@ TEST(RWLock, owned_creation )
 {
 	RWLock rw_lock;
 	int nShared_res = 0;
-	BOOST_CHECK( nShared_res == 0);
-	//EXPECT_EQ(0,nShared_res);
+	EXPECT_EQ(0, nShared_res);
+	EXPECT_TRUE(  nShared_res ==  0 );
 	/*int nRead_thread_Cnt = 0;
 	while(nRead_thread_Cnt++ < 100)
 	{
@@ -47,6 +47,4 @@ TEST(RWLock, owned_creation )
 		});
 	}*/
 		
-	//bool bFlag = true;
-	//EXPECT_TRUE( bFlag );
 }
