@@ -18,7 +18,8 @@ set(CMAKE_CXX_EXTENSIONS NO)
 
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
-set(home_root /home/ultimatepandit/Project_SRC/practice_zone/core) 
+set(home_root ${CMAKE_CURRENT_SOURCE_DIR}/.)
+
 set(CMAKE_INSTALL_PREFIX ${home_root}/build/install)
 
 option(USE_GOOGLE_TEST "Enable Google tests" OFF)
