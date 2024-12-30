@@ -15,7 +15,7 @@ public:
 		num_destructor_calls_.store( 0 );
 	}
 };
-#if ! USE_GOOGLE_TEST
+#if !USE_GOOGLE_TEST 
 
 
 # ifndef BOOST_TEST_MODULE
